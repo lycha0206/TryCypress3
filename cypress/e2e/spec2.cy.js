@@ -8,6 +8,6 @@ describe("template spec", () => {
   it("passes 2", () => {
     cy.visit("https://google.com");
 
-    cy.get("body").should("contain", "Lucky2");
+    cy.get("button").second().should("contain", "Lucky");
   });
 });
